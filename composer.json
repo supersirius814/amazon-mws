@@ -21,7 +21,7 @@
     "require-dev": {},
     "autoload": {
         "psr-4": {
-            "MCS\\": "src"
+            "Canopus0410\\": "src"
         }
     }
 }
