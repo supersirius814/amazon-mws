@@ -48,6 +48,8 @@ class MWSClient
     protected $debugNextFeed = false;
     protected $client = NULL;
 
+    public $resultXML = NULL;
+
     public function __construct(array $config)
     {
 
@@ -1228,6 +1230,7 @@ class MWSClient
 
             $body = (string) $response->getBody();
 
+            $this->resultXML = $body;
 
             if ($raw) {
                 return $body;
